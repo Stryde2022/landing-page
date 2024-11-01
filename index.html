@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Blog preview card</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .main-ground {
+      background-color: hsl(47, 88%, 63%);
+      width: 1440px;
+      min-height: 710px;
+      margin: auto;
+      display: flex;
+      justify-content: center; 
+      align-items: center;
+    }
+
+    .white-ground {
+      width: 380px;
+      height: 600px;
+      background-color: white;
+      border-radius: 5%;
+      margin: auto;
+      position: absolute;
+      right: 5px;
+      bottom: 5px;
+      border: solid black 1px;
+
+    }
+
+    .dark {
+      width: 380px;
+      height: 600px;
+      background-color: hsl(0, 0%, 7%);
+      border-radius: 5%;
+      margin: auto;
+      position: relative;
+      
+    }
+
+    .img {
+      
+      border-radius: 5%;
+      margin: 20px 23px 40px;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .l-ng {
+      margin: 0 23px;
+      background-color: hsl(47, 88%, 63%);
+      display: inline-block;
+      padding: 5px 10px;
+      border-radius: 5%;
+    }
+
+    .body-space {
+      margin: 10px 23px;
+    }
+
+    .big {
+      padding: 20px 0;
+    }
+
+    .img-size {
+      height: 40px;
+      width: 40px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="main-ground">
+    <div class="dark">
+      <div class="white-ground">
+        <div class="text-body">
+          <img class="img" src="assets/images/illustration-article.svg" alt="illustratiion-img">
+        </div>
+        <div class="l-ng">
+          <strong>Learning</strong>
+        </div>
+
+        <p class="body-space">Published 21 Dec 2023</p>
+
+        <h2 class="body-space big">HTML & CSS foundations</h2>
+        <p class="body-space">These languages are the backbone of every website, defining structure, content, and presentation.</p>
+
+        <div style="position: relative;">
+          <img class="body-space img-size" src="assets/images/image-avatar.webp" alt="avatar-img"> 
+          <div style="position: absolute; bottom: 25px; left: 70px;"><strong>Greg Hooper</strong></div>
+        </div>
+
+
+      </div>
+    </div>
+   
+  </div>
+
+</body>
+</html>
